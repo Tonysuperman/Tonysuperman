@@ -49,32 +49,35 @@
 
 <h3>OPERATOR SNAPSHOT</h3>
 
-<table>
-  <tr>
-    <td><strong>角色</strong></td>
-    <td>大学生开发者</td>
-  </tr>
-  <tr>
-    <td><strong>坐标</strong></td>
-    <td>杭州 · 中国</td>
-  </tr>
-  <tr>
-    <td><strong>关注方向</strong></td>
-    <td>AI Products / Full Stack / Creative Frontend</td>
-  </tr>
-  <tr>
-    <td><strong>当前构建</strong></td>
-    <td>个人项目 / AI 应用 / 作品集</td>
-  </tr>
-  <tr>
-    <td><strong>方法论</strong></td>
-    <td>Signal over noise</td>
-  </tr>
-  <tr>
-    <td><strong>原则</strong></td>
-    <td>Ship fast. Keep it clear.</td>
-  </tr>
-</table>
+<p>
+  <strong>角色</strong><br />
+  大学生开发者
+</p>
+
+<p>
+  <strong>坐标</strong><br />
+  杭州 · 中国
+</p>
+
+<p>
+  <strong>关注方向</strong><br />
+  AI Products / Full Stack / Creative Frontend
+</p>
+
+<p>
+  <strong>当前构建</strong><br />
+  个人项目 / AI 应用 / 作品集
+</p>
+
+<p>
+  <strong>方法论</strong><br />
+  Signal over noise
+</p>
+
+<p>
+  <strong>原则</strong><br />
+  Ship fast. Keep it clear.
+</p>
 
 
 <h3>WHAT I BUILD</h3>
@@ -94,18 +97,35 @@
 
 <h3>CURRENT OPS</h3>
 
-<pre lang="txt"><code>MODE      : LEARNING / BUILDING
-STACK     : TS / PY / REACT / NODE / OPENAI
-TIMEZONE  : UTC+8
-OPEN FOR  : 实习 / 校园项目 / 技术合作</code></pre>
+<p>
+  <strong>MODE</strong><br />
+  LEARNING / BUILDING
+</p>
+
+<p>
+  <strong>STACK</strong><br />
+  TS / PY / REACT / NODE / OPENAI
+</p>
+
+<p>
+  <strong>TIMEZONE</strong><br />
+  UTC+8
+</p>
+
+<p>
+  <strong>OPEN FOR</strong><br />
+  实习 / 校园项目 / 技术合作
+</p>
 
 
 <h3>ACTIVE TRACKS</h3>
 
-<pre lang="txt"><code>[01] 深入 React / Next.js 项目实践
-[02] 训练 AI 应用的产品化能力
-[03] 打磨个人主页与项目展示
-[04] 持续积累全栈工程经验</code></pre>
+<ul>
+  <li>深入 React / Next.js 项目实践</li>
+  <li>训练 AI 应用的产品化能力</li>
+  <li>打磨个人主页与项目展示</li>
+  <li>持续积累全栈工程经验</li>
+</ul>
 
 
 <h3>DIRECT LINES</h3>
