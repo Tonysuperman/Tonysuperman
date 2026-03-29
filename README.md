@@ -25,11 +25,11 @@ Tip:
 </p>
 
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME?tab=followers">
-    <img alt="followers" src="https://img.shields.io/github/followers/YOUR_USERNAME?style=for-the-badge&label=FOLLOWERS&labelColor=0b1020&color=f59e0b" />
+  <a href="https://github.com/Tonysuperman?tab=followers">
+    <img alt="followers" src="https://img.shields.io/github/followers/Tonysuperman?style=for-the-badge&label=FOLLOWERS&labelColor=0b1020&color=f59e0b" />
   </a>
   <a href="https://github.com/YOUR_USERNAME">
-    <img alt="profile views" src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=for-the-badge&label=PROFILE+VIEWS&color=06b6d4" />
+    <img alt="profile views" src="https://komarev.com/ghpvc/?username=Tonysuperman&style=for-the-badge&label=PROFILE+VIEWS&color=06b6d4" />
   </a>
   <a href="mailto:YOUR_EMAIL">
     <img alt="email" src="https://img.shields.io/badge/EMAIL-CONTACT_ME-ef4444?style=for-the-badge&labelColor=0b1020&logo=gmail&logoColor=white" />
