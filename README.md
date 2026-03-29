@@ -47,16 +47,34 @@
   <tr>
     <td width="56%" valign="top">
 
-<h3>OPERATOR.CONFIG.TS</h3>
+<h3>OPERATOR SNAPSHOT</h3>
 
-<pre lang="ts"><code>const operator = {
-  role: "大学生开发者",
-  base: "杭州 · 中国",
-  focus: ["AI Products", "Full Stack", "Creative Frontend"],
-  building: "个人项目 / AI 应用 / 作品集",
-  mindset: "Signal over noise",
-  principle: "Ship fast. Keep it clear."
-};</code></pre>
+<table>
+  <tr>
+    <td><strong>角色</strong></td>
+    <td>大学生开发者</td>
+  </tr>
+  <tr>
+    <td><strong>坐标</strong></td>
+    <td>杭州 · 中国</td>
+  </tr>
+  <tr>
+    <td><strong>关注方向</strong></td>
+    <td>AI Products / Full Stack / Creative Frontend</td>
+  </tr>
+  <tr>
+    <td><strong>当前构建</strong></td>
+    <td>个人项目 / AI 应用 / 作品集</td>
+  </tr>
+  <tr>
+    <td><strong>方法论</strong></td>
+    <td>Signal over noise</td>
+  </tr>
+  <tr>
+    <td><strong>原则</strong></td>
+    <td>Ship fast. Keep it clear.</td>
+  </tr>
+</table>
 
 
 <h3>WHAT I BUILD</h3>
