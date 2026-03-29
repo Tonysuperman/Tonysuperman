@@ -50,7 +50,7 @@
 
   <text x="64" y="118" fill="#38BDF8" font-family="monospace" font-size="14" letter-spacing="3.6">DESIGN . CODE . DEPLOY . REPEAT</text>
 
-  <text x="64" y="190" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="1.2">YOUR_NAME</text>
+  <text x="64" y="190" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="1.2">杨屹轩</text>
   <rect x="558" y="134" width="14" height="64" rx="3" fill="#F59E0B" filter="url(#softGlow)">
     <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
