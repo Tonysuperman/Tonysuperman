@@ -1,0 +1,135 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="46" y1="28" x2="1224" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.58" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#160C08"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="0.52" stop-color="#06B6D4" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowOrb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(988 246) rotate(90) scale(160 160)">
+      <stop stop-color="#0EA5E9" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1278" height="418" rx="27" stroke="#1F2937" stroke-width="2"/>
+
+  <g opacity="0.32">
+    <rect width="1280" height="420" fill="url(#grid)">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-40 -40;0 0" dur="18s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <circle cx="988" cy="246" r="160" fill="url(#glowOrb)"/>
+  <path d="M0 336C132 302 212 280 334 290C461 300 587 373 708 372C851 371 985 254 1124 234C1180 226 1228 230 1280 240V420H0V336Z" fill="#09111F" fill-opacity="0.88"/>
+
+  <rect x="-320" y="0" width="320" height="420" fill="url(#beam)" opacity="0.46">
+    <animate attributeName="x" values="-320;1280" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0.85">
+    <rect x="56" y="48" width="168" height="26" rx="13" fill="#0B1220" stroke="#334155"/>
+    <circle cx="74" cy="61" r="4" fill="#22C55E"/>
+    <text x="88" y="66" fill="#94A3B8" font-family="monospace" font-size="13" letter-spacing="1.6">PROFILE // LIVE</text>
+  </g>
+
+  <text x="64" y="118" fill="#38BDF8" font-family="monospace" font-size="14" letter-spacing="3.6">DESIGN . CODE . DEPLOY . REPEAT</text>
+
+  <text x="64" y="190" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="1.2">YOUR_NAME</text>
+  <rect x="558" y="134" width="14" height="64" rx="3" fill="#F59E0B" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="66" y="232" fill="#CBD5E1" font-family="monospace" font-size="21" letter-spacing="1.2">BUILDING SHARP PRODUCTS WITH EDGE + SIGNAL</text>
+  <text x="66" y="266" fill="#94A3B8" font-family="monospace" font-size="16" letter-spacing="0.8">Creative systems, bold interfaces, real engineering.</text>
+
+  <g opacity="0.88">
+    <rect x="66" y="302" width="88" height="32" rx="16" fill="#0B1220" stroke="#1D4ED8"/>
+    <text x="87" y="323" fill="#DBEAFE" font-family="monospace" font-size="14">AI</text>
+
+    <rect x="168" y="302" width="112" height="32" rx="16" fill="#0B1220" stroke="#06B6D4"/>
+    <text x="191" y="323" fill="#CFFAFE" font-family="monospace" font-size="14">FRONTEND</text>
+
+    <rect x="294" y="302" width="106" height="32" rx="16" fill="#0B1220" stroke="#F59E0B"/>
+    <text x="319" y="323" fill="#FEF3C7" font-family="monospace" font-size="14">SYSTEMS</text>
+
+    <rect x="414" y="302" width="118" height="32" rx="16" fill="#0B1220" stroke="#EF4444"/>
+    <text x="438" y="323" fill="#FEE2E2" font-family="monospace" font-size="14">VISUALS</text>
+  </g>
+
+  <g>
+    <rect x="788" y="82" width="404" height="214" rx="18" fill="#09111B" stroke="#243244" stroke-width="2"/>
+    <rect x="788" y="82" width="404" height="34" rx="18" fill="#0C1725"/>
+    <circle cx="818" cy="99" r="5" fill="#F87171"/>
+    <circle cx="838" cy="99" r="5" fill="#FBBF24"/>
+    <circle cx="858" cy="99" r="5" fill="#34D399"/>
+    <text x="884" y="104" fill="#64748B" font-family="monospace" font-size="13">operator.config.ts</text>
+
+    <text x="816" y="146" fill="#64748B" font-family="monospace" font-size="16">const</text>
+    <text x="872" y="146" fill="#E2E8F0" font-family="monospace" font-size="16">profile</text>
+    <text x="937" y="146" fill="#64748B" font-family="monospace" font-size="16">=</text>
+    <text x="956" y="146" fill="#F59E0B" font-family="monospace" font-size="16">{</text>
+
+    <text x="832" y="176" fill="#38BDF8" font-family="monospace" font-size="15">mode</text>
+    <text x="874" y="176" fill="#64748B" font-family="monospace" font-size="15">:</text>
+    <text x="892" y="176" fill="#FDE68A" font-family="monospace" font-size="15">"ship"</text>
+
+    <text x="832" y="202" fill="#38BDF8" font-family="monospace" font-size="15">stack</text>
+    <text x="882" y="202" fill="#64748B" font-family="monospace" font-size="15">:</text>
+    <text x="900" y="202" fill="#E2E8F0" font-family="monospace" font-size="15">["ts", "py", "react"]</text>
+
+    <text x="832" y="228" fill="#38BDF8" font-family="monospace" font-size="15">focus</text>
+    <text x="882" y="228" fill="#64748B" font-family="monospace" font-size="15">:</text>
+    <text x="900" y="228" fill="#E2E8F0" font-family="monospace" font-size="15">"signal over noise"</text>
+
+    <text x="832" y="254" fill="#38BDF8" font-family="monospace" font-size="15">status</text>
+    <text x="890" y="254" fill="#64748B" font-family="monospace" font-size="15">:</text>
+    <text x="908" y="254" fill="#34D399" font-family="monospace" font-size="15">"online"</text>
+
+    <text x="816" y="282" fill="#F59E0B" font-family="monospace" font-size="16">}</text>
+  </g>
+
+  <g transform="translate(988 246)" opacity="0.8">
+    <circle r="120" stroke="#1E293B" stroke-width="1.5"/>
+    <circle r="82" stroke="#0EA5E9" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle r="44" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle r="9" fill="#E2E8F0"/>
+
+    <g>
+      <circle cx="120" cy="0" r="5" fill="#F59E0B"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-82" r="4.5" fill="#06B6D4"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="-44" cy="0" r="4" fill="#F87171"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="7s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g opacity="0.72">
+    <path d="M796 336H1186" stroke="#1E293B" stroke-width="2"/>
+    <path d="M796 336H1012" stroke="#06B6D4" stroke-width="2" filter="url(#softGlow)">
+      <animate attributeName="d" values="M796 336H1012;M796 336H1146;M796 336H1012" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+    <text x="797" y="360" fill="#94A3B8" font-family="monospace" font-size="14">SYSTEM LOAD</text>
+    <text x="1122" y="360" fill="#F8FAFC" font-family="monospace" font-size="14">99.4%</text>
+  </g>
+</svg>
