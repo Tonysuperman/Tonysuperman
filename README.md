@@ -1,30 +1,13 @@
-<!--
-PROFILE README TEMPLATE
-
-How to use:
-
-1. Create a public repository named exactly YOUR_USERNAME
-2. Copy this README.md and the /assets folder into that repository
-3. Replace every YOUR_* placeholder below
-4. Edit ./assets/hero-terminal.svg if you want to change the banner text
-5. URL placeholders should include the full protocol, for example https://example.com
-
-Tip:
-
-- GitHub may cache SVG assets for a while after you push changes
-- Commit again or rename the file if the banner does not refresh immediately
-  -->
-
 <p align="center">
   <img src="./assets/hero-terminal.svg" alt="Cyber terminal banner" width="100%" />
 </p>
 
 
-<h1 align="center">杨屹轩</h1>
+<h1 align="center">杨屹轩 / Tony Yang</h1>
 
 <p align="center">
-  <strong>探索 AI 与全栈开发的跨界可能</strong><br />
-  Building products with sharp visuals, fast systems, and real signal.
+  AI 应用 · 全栈开发 · Creative Frontend<br />
+  用清晰的产品结构、鲜明的界面表达和可靠的工程实现，把复杂想法做成真正可交付的东西。
 </p>
 
 
@@ -38,41 +21,60 @@ Tip:
   <a href="mailto:tonyyangsuper@gmail.com">
     <img alt="email" src="https://img.shields.io/badge/EMAIL-CONTACT_ME-ef4444?style=for-the-badge&labelColor=0b1020&logo=gmail&logoColor=white" />
   </a>
+  <img alt="open to work" src="https://img.shields.io/badge/OPEN_TO-INTERNSHIP%20%2F%20COLLAB-22c55e?style=for-the-badge&labelColor=0b1020" />
 </p>
 
 
 <table>
   <tr>
-    <td width="58%" valign="top">
+    <td width="33%" valign="top">
+      <h3>PRODUCT SIGNAL</h3>
+      <p>关注 AI-native 产品、效率工具和真实可用的交互流程，而不是只停留在 demo 层。</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>FULL-STACK EXECUTION</h3>
+      <p>愿意从界面、接口、脚本到数据流打通整条链路，把想法做成完整可运行的闭环。</p>
+    </td>
+    <td width="34%" valign="top">
+      <h3>VISUAL IDENTITY</h3>
+      <p>不喜欢模板感页面，重视首屏节奏、信息层次和能够被记住的界面表达。</p>
+    </td>
+  </tr>
+</table>
 
 
-<h3>SIGNAL</h3>
+<table>
+  <tr>
+    <td width="56%" valign="top">
+
+<h3>OPERATOR.CONFIG.TS</h3>
 
 <pre lang="ts"><code>const operator = {
-  role: "大学生",
+  role: "大学生开发者",
   base: "杭州 · 中国",
   focus: ["AI Products", "Full Stack", "Creative Frontend"],
-  building: "探索中...",
-  principle: "Clarity beats noise. Shipping beats theater."
+  building: "个人项目 / AI 应用 / 作品集",
+  mindset: "Signal over noise",
+  principle: "Ship fast. Keep it clear."
 };</code></pre>
 
 
-<h3>WHAT I SHIP</h3>
+<h3>WHAT I BUILD</h3>
 
 <ul>
-  <li>Interfaces with identity, not template energy</li>
-  <li>Tools that compress complexity into something people can use</li>
-  <li>Systems that move fast without feeling fragile</li>
-  <li>Visual experiences that still respect engineering rigor</li>
+  <li>把复杂能力压缩成清晰体验的 AI 工具</li>
+  <li>兼顾速度、审美和可维护性的前端界面</li>
+  <li>从前端到服务端都能闭环落地的功能模块</li>
+  <li>有辨识度、不像模板拼装的个人作品展示</li>
 </ul>
 
 
-<blockquote>I do not build generic pages. I build surfaces that leave a signal.</blockquote>
+<blockquote>我更在意“有没有被真正使用”，而不只是“有没有做出来”。</blockquote>
 
     </td>
-    <td width="42%" valign="top">
+    <td width="44%" valign="top">
 
-<h3>LIVE STATUS</h3>
+<h3>CURRENT OPS</h3>
 
 <pre lang="txt"><code>MODE      : LEARNING / BUILDING
 STACK     : TS / PY / REACT / NODE / OPENAI
@@ -80,12 +82,12 @@ TIMEZONE  : UTC+8
 OPEN FOR  : 实习 / 校园项目 / 技术合作</code></pre>
 
 
-<h3>CURRENT LOOP</h3>
+<h3>ACTIVE TRACKS</h3>
 
-<pre lang="txt"><code>[01] Learning  : 全栈开发 & AI 应用
-[02] Exploring : React / Next.js 生态
-[03] Building  : 个人项目进行中
-[04] Reading   : 技术相关书籍</code></pre>
+<pre lang="txt"><code>[01] 深入 React / Next.js 项目实践
+[02] 训练 AI 应用的产品化能力
+[03] 打磨个人主页与项目展示
+[04] 持续积累全栈工程经验</code></pre>
 
 
 <h3>DIRECT LINES</h3>
@@ -95,13 +97,12 @@ OPEN FOR  : 实习 / 校园项目 / 技术合作</code></pre>
   <li><a href="https://github.com/Tonysuperman">GitHub</a></li>
 </ul>
 
-
     </td>
-
   </tr>
 </table>
 
-### BUILD MATRIX
+
+### BUILD KIT
 
 <p>
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0b1020?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0b1020&color=1d4ed8" />
@@ -130,19 +131,10 @@ OPEN FOR  : 实习 / 校园项目 / 技术合作</code></pre>
 </p>
 
 
-### NOW
+### BUILD NOTE
 
 ```txt
-LEARNING       :: 全栈开发 & AI 应用实践
-EXPLORING      :: React / Next.js 生态系统
-EXPERIMENTING  :: 个人项目开发
-COLLABORATING  :: 实习机会 / 校园项目
-```
-
-### MANIFEST
-
-```txt
-Good software is not just functional.
-It should read clearly, move quickly,
-and feel like somebody cared about the details.
+Good products should read clearly,
+feel intentional,
+and still hold up in code.
 ```
