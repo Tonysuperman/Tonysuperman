@@ -1,178 +1,106 @@
 <p align="center">
-  <img src="./assets/hero-terminal.svg" alt="Cyber terminal banner" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%E6%9D%A8%E5%B1%B9%E8%BD%A9+%C2%B7+Yixuan+Yang;Data+Science+%26+Big+Data" alt="Typing SVG" />
 </p>
-
-
-<h1 align="center">杨屹轩 / Tony Yang</h1>
 
 <p align="center">
-  AI 应用 · 全栈开发 · Creative Frontend<br />
-  用清晰的产品结构、鲜明的界面表达和可靠的工程实现，把复杂想法做成真正可交付的东西。
+  <em>浙江工业大学 健行学院 · 数据科学与大数据技术 · GPA 4.094/5.00 · 专业排名 3/41</em>
 </p>
-
 
 <p align="center">
   <a href="https://github.com/Tonysuperman?tab=followers">
-    <img alt="followers" src="https://img.shields.io/github/followers/Tonysuperman?style=for-the-badge&label=FOLLOWERS&labelColor=0b1020&color=f59e0b" />
+    <img alt="followers" src="https://img.shields.io/github/followers/Tonysuperman?style=for-the-badge&label=FOLLOWERS&labelColor=0a0a0f&color=6c63ff" />
   </a>
   <a href="https://github.com/Tonysuperman">
-    <img alt="profile views" src="https://komarev.com/ghpvc/?username=Tonysuperman&style=for-the-badge&label=PROFILE+VIEWS&color=06b6d4" />
+    <img alt="profile views" src="https://komarev.com/ghpvc/?username=Tonysuperman&style=for-the-badge&label=PROFILE+VIEWS&color=00d4aa&labelColor=0a0a0f" />
   </a>
   <a href="mailto:tonyyangsuper@gmail.com">
-    <img alt="email" src="https://img.shields.io/badge/EMAIL-CONTACT_ME-ef4444?style=for-the-badge&labelColor=0b1020&logo=gmail&logoColor=white" />
+    <img alt="email" src="https://img.shields.io/badge/EMAIL-CONTACT_ME-ff6b9d?style=for-the-badge&labelColor=0a0a0f&logo=gmail&logoColor=white" />
   </a>
-  <img alt="open to work" src="https://img.shields.io/badge/OPEN_TO-INTERNSHIP%20%2F%20COLLAB-22c55e?style=for-the-badge&labelColor=0b1020" />
+  <img alt="open to work" src="https://img.shields.io/badge/OPEN_TO-INTERNSHIP%20%2F%20RESEARCH-00d4aa?style=for-the-badge&labelColor=0a0a0f" />
 </p>
 
+---
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>PRODUCT SIGNAL</h3>
-      <p>关注 AI-native 产品、效率工具和真实可用的交互流程，而不是只停留在 demo 层。</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>FULL-STACK EXECUTION</h3>
-      <p>愿意从界面、接口、脚本到数据流打通整条链路，把想法做成完整可运行的闭环。</p>
-    </td>
-    <td width="34%" valign="top">
-      <h3>VISUAL IDENTITY</h3>
-      <p>不喜欢模板感页面，重视首屏节奏、信息层次和能够被记住的界面表达。</p>
-    </td>
-  </tr>
-</table>
+### About Me
 
+```python
+class YixuanYang:
+    def __init__(self):
+        self.name = "杨屹轩"
+        self.school = "浙江工业大学 · 健行学院（校前1%）"
+        self.major = "数据科学与大数据技术"
+        self.gpa = 4.094
+        self.rank = "3/41"
+        self.english = "CET-4 616 | CET-6 587"
 
-<table>
-  <tr>
-    <td width="56%" valign="top">
+    def get_research(self):
+        return ["NLP", "LLM", "RAG", "Medical AI"]
 
-<h3>OPERATOR SNAPSHOT</h3>
-
-<p>
-  <strong>角色</strong><br />
-  大学生开发者
-</p>
-
-<p>
-  <strong>坐标</strong><br />
-  杭州 · 中国
-</p>
-
-<p>
-  <strong>关注方向</strong><br />
-  AI Products / Full Stack / Creative Frontend
-</p>
-
-<p>
-  <strong>当前构建</strong><br />
-  个人项目 / AI 应用 / 作品集
-</p>
-
-<p>
-  <strong>方法论</strong><br />
-  Signal over noise
-</p>
-
-<p>
-  <strong>原则</strong><br />
-  Ship fast. Keep it clear.
-</p>
-
-
-<h3>WHAT I BUILD</h3>
-
-<ul>
-  <li>把复杂能力压缩成清晰体验的 AI 工具</li>
-  <li>兼顾速度、审美和可维护性的前端界面</li>
-  <li>从前端到服务端都能闭环落地的功能模块</li>
-  <li>有辨识度、不像模板拼装的个人作品展示</li>
-</ul>
-
-
-<blockquote>我更在意“有没有被真正使用”，而不只是“有没有做出来”。</blockquote>
-
-    </td>
-    <td width="44%" valign="top">
-
-<h3>CURRENT OPS</h3>
-
-<p>
-  <strong>MODE</strong><br />
-  LEARNING / BUILDING
-</p>
-
-<p>
-  <strong>STACK</strong><br />
-  TS / PY / REACT / NODE / OPENAI
-</p>
-
-<p>
-  <strong>TIMEZONE</strong><br />
-  UTC+8
-</p>
-
-<p>
-  <strong>OPEN FOR</strong><br />
-  实习 / 校园项目 / 技术合作
-</p>
-
-
-<h3>ACTIVE TRACKS</h3>
-
-<ul>
-  <li>深入 React / Next.js 项目实践</li>
-  <li>训练 AI 应用的产品化能力</li>
-  <li>打磨个人主页与项目展示</li>
-  <li>持续积累全栈工程经验</li>
-</ul>
-
-
-<h3>DIRECT LINES</h3>
-
-<ul>
-  <li><a href="mailto:tonyyangsuper@gmail.com">Email</a></li>
-  <li><a href="https://github.com/Tonysuperman">GitHub</a></li>
-</ul>
-
-    </td>
-  </tr>
-</table>
-
-
-### BUILD KIT
-
-<p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0b1020?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0b1020&color=1d4ed8" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0b1020?style=for-the-badge&logo=javascript&logoColor=111827&labelColor=0b1020&color=facc15" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-0b1020?style=for-the-badge&logo=python&logoColor=white&labelColor=0b1020&color=0ea5e9" />
-  <img alt="React" src="https://img.shields.io/badge/React-0b1020?style=for-the-badge&logo=react&logoColor=white&labelColor=0b1020&color=06b6d4" />
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0b1020?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=0b1020&color=111827" />
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-0b1020?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=0b1020&color=16a34a" />
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0b1020?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0b1020&color=2563eb" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-0b1020?style=for-the-badge&logo=docker&logoColor=white&labelColor=0b1020&color=0284c7" />
-  <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-0b1020?style=for-the-badge&logo=openai&logoColor=white&labelColor=0b1020&color=ea580c" />
-  <img alt="Figma" src="https://img.shields.io/badge/Figma-0b1020?style=for-the-badge&logo=figma&logoColor=white&labelColor=0b1020&color=ec4899" />
-</p>
-
-
-### GITHUB SIGNAL
-
-<p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Tonysuperman&show_icons=true&hide_border=true&bg_color=00000000&title_color=f59e0b&text_color=d1d5db&icon_color=06b6d4&rank_icon=percentile" alt="GitHub stats" />
-  <img height="170" src="https://streak-stats.demolab.com?user=Tonysuperman&hide_border=true&background=00000000&ring=f59e0b&fire=f59e0b&currStreakLabel=06b6d4&sideNums=e5e7eb&currStreakNum=ffffff&sideLabels=94a3b8&dates=64748b" alt="GitHub streak" />
-</p>
-
-
-<p>
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Tonysuperman&bg_color=00000000&color=d1d5db&line=06b6d4&point=f59e0b&area=true&hide_border=true" alt="GitHub activity graph" />
-</p>
-
-
-### BUILD NOTE
-
-```txt
-Good products should read clearly,
-feel intentional,
-and still hold up in code.
+    def get_stack(self):
+        return ["Python", "C++", "PyTorch", "Docker", "Flask"]
 ```
+
+---
+
+### Research & Projects
+
+- **中文数据集BPRF构建** — *Business as Rulesual: A Benchmark and Framework for Business Rule Flow Modeling with LLMs*，利用大模型构建符合规则的数据集
+- **清华SDG研究院助研** — 绿色外卖研究课题组，负责数据采集与爬虫
+- **CMeEE-V2医疗实体识别** — 医学NER任务，临床试验筛选分类模型构建
+- **智能园区自主导航小车** ★ 优秀课设 — OpenCV+HOG+SVM交通标志识别
+- **哈夫曼树压缩软件** ★ 优秀课设 — QT/C++实现
+
+---
+
+### Awards & Competitions
+
+🏆 中国大学生服务外包创新创业大赛A类（进行中）
+🥈 全国大学生数学竞赛浙江省二等奖
+🏅 美国大学生数学建模大赛赛区三等奖 & 2026美赛（待出结果）
+💻 ACM校赛三等奖 | 全国大学生电子商务竞赛校赛三等奖
+
+---
+
+### Experience
+
+| Period | Role | Organization |
+|--------|------|-------------|
+| 2025.11 | 冬令营交流 | TUM / TUM Asia / 清华大学 — 智慧可持续城市与交通 |
+| 2025.07-08 | 实习 | 宁波市大数据投资发展有限公司 — Dify+Vue+Flask合同审核系统 |
+| 2024.08 | 实习 | 宁波金唐软件有限公司 — JSP+MySQL留言板系统 |
+
+---
+
+### Tech Stack
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-0a0a0f?style=for-the-badge&logo=python&logoColor=white&labelColor=0a0a0f&color=0ea5e9" />
+  <img alt="C++" src="https://img.shields.io/badge/C++-0a0a0f?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=0a0a0f&color=00599C" />
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-0a0a0f?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=0a0a0f&color=EE4C2C" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-0a0a0f?style=for-the-badge&logo=docker&logoColor=white&labelColor=0a0a0f&color=0284c7" />
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-0a0a0f?style=for-the-badge&logo=linux&logoColor=white&labelColor=0a0a0f&color=FCC624" />
+  <img alt="Flask" src="https://img.shields.io/badge/Flask-0a0a0f?style=for-the-badge&logo=flask&logoColor=white&labelColor=0a0a0f&color=000000" />
+  <img alt="Vue.js" src="https://img.shields.io/badge/Vue.js-0a0a0f?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=0a0a0f&color=4FC08D" />
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-0a0a0f?style=for-the-badge&logo=mysql&logoColor=white&labelColor=0a0a0f&color=4479A1" />
+  <img alt="Hadoop" src="https://img.shields.io/badge/Hadoop-0a0a0f?style=for-the-badge&logo=apachehadoop&logoColor=white&labelColor=0a0a0f&color=66CCFF" />
+  <img alt="Nginx" src="https://img.shields.io/badge/Nginx-0a0a0f?style=for-the-badge&logo=nginx&logoColor=white&labelColor=0a0a0f&color=009639" />
+</p>
+
+---
+
+### GitHub Signal
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Tonysuperman&show_icons=true&hide_border=true&bg_color=00000000&title_color=6c63ff&text_color=d1d5db&icon_color=00d4aa&rank_icon=percentile" alt="GitHub stats" />
+  <img height="170" src="https://streak-stats.demolab.com?user=Tonysuperman&hide_border=true&background=00000000&ring=6c63ff&fire=6c63ff&currStreakLabel=00d4aa&sideNums=e5e7eb&currStreakNum=ffffff&sideLabels=94a3b8&dates=64748b" alt="GitHub streak" />
+</p>
+
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Tonysuperman&bg_color=00000000&color=d1d5db&line=6c63ff&point=00d4aa&area=true&hide_border=true" alt="GitHub activity graph" />
+</p>
+
+---
+
+<p align="center">
+  <em>“Ship fast. Keep it clear. Make it matter.”</em>
+</p>
