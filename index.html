@@ -3,107 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杨屹轩 | Tony Yang - Academic Portfolio</title>
+    <title>杨屹轩 | Yixuan Yang - Data Science & Big Data</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <div class="profile-section">
-                <div class="avatar-container">
-                    <img src="assets/profile.jpg" alt="Tony Yang" class="avatar" id="avatar">
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>YX<span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active" data-section="hero">首页</a></li>
+            <li><a href="#education" class="nav-link" data-section="education">教育</a></li>
+            <li><a href="#awards" class="nav-link" data-section="awards">获奖</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">科研</a></li>
+            <li><a href="#experience" class="nav-link" data-section="experience">经历</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">技能</a></li>
+        </ul>
+        <div class="nav-hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link">首页</a></li>
+            <li><a href="#education" class="mobile-nav-link">教育</a></li>
+            <li><a href="#awards" class="mobile-nav-link">获奖</a></li>
+            <li><a href="#projects" class="mobile-nav-link">科研</a></li>
+            <li><a href="#experience" class="mobile-nav-link">经历</a></li>
+            <li><a href="#skills" class="mobile-nav-link">技能</a></li>
+        </ul>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Open to Opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">你好，我是</span>
+                <span class="hero-name">杨屹轩</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                浙江工业大学健行学院 · 数据科学与大数据技术 · GPA 4.094/5.00 · 专业排名 3/41
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4.094">0</span>
+                    <span class="stat-label">GPA</span>
                 </div>
-                <div class="profile-info">
-                    <h1 class="name">杨屹轩 <span class="name-en">Tony Yang</span></h1>
-                    <p class="tagline">AI 应用 · 全栈开发 · Creative Frontend</p>
-                    <p class="description">用清晰的产品结构、鲜明的界面表达和可靠的工程实现，把复杂想法做成真正可交付的东西。</p>
-                    
-                    <div class="social-links">
-                        <a href="https://github.com/Tonysuperman" class="social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-1.334-.433-.178-.179-.729.027-1.011.091-.125.319-1.011.319-1.011s.513.103.846.155c.328.051.652.078.652.078.232-1.623.937-2.547 1.703-3.015-2.367-.269-4.854-1.185-4.854-1.185-.395-.158-.158-.981-.158-.981.319-.08.655-.121.655-.121.601.042 1.096.613 1.096.613.639-.218 1.336-.218 1.975 0 .001-.001.638-.594 1.096-.613.001-.001.495-.571 1.096-.613 0 0 .336.041.655.121 0 0 .158.823-.158.981 0 0-2.487.916-4.854 1.185.766.468 1.471 1.392 1.703 3.015 0 0 .324-.027.652-.078.333-.052.846-.155.846-.155.206.282.462 1.036.027 1.011.344.299.655.829.762 1.604.685.307 2.422-.837 3.492-.997.765.468 1.47 1.392 1.703 3.015.652-.027.977-.052.977-.052.261.282.519 1.036.074 1.011-.344.299-.655.829-.762 1.604.107.775.418 1.305.762 1.604.685.307 2.422-.837 3.492-.997.766.468 1.471 1.392 1.703 3.015 0 0 .324-.027.652-.078.333-.052.846-.155.846-.155.206.282.462 1.036.027 1.011.344.299.655.829.762 1.604.685.307 2.422-.837 3.492-.997.765.468 1.47 1.392 1.703 3.015 0 0 .324-.027.652-.078.333-.052.846-.155.846-.155.206.282.462 1.036.027 1.011.344.299.655.829.762 1.604.685.307 2.422-.837 3.492-.997.766.468 1.471 1.392 1.703 3.015 0 0 .324-.027.652-.078.333-.052.846-.155.846-.155.206.282.462 1.036.027 1.011.344.299.655.829.762 1.604z"/></svg>
-                            GitHub
-                        </a>
-                        <a href="mailto:tonyyangsuper@gmail.com" class="social-link">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            Email
-                        </a>
-                        <a href="https://www.linkedin.com/in/tonyyang" class="social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                            LinkedIn
-                        </a>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">/41</span>
+                    <span class="stat-label">专业排名</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="616">0</span>
+                    <span class="stat-label">CET-4</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="587">0</span>
+                    <span class="stat-label">CET-6</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>查看科研</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="mailto:tonyyangsuper@gmail.com" class="btn btn-secondary">
+                    <span>联系我</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">profile.py</span>
+                </div>
+                <div class="code-body">
+                    <pre><code><span class="code-keyword">class</span> <span class="code-class">Student</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"杨屹轩"</span>
+        self.school = <span class="code-string">"浙江工业大学"</span>
+        self.college = <span class="code-string">"健行学院"</span>
+        self.major = <span class="code-string">"数据科学与大数据技术"</span>
+        self.gpa = <span class="code-number">4.094</span>
+        self.rank = <span class="code-string">"3/41"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">get_skills</span>(self):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Python"</span>, <span class="code-string">"C++"</span>,
+            <span class="code-string">"PyTorch"</span>, <span class="code-string">"NLP"</span>,
+            <span class="code-string">"Docker"</span>, <span class="code-string">"LLM"</span>
+        ]</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">教育背景</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card glass-card reveal">
+                <div class="edu-header">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h3>浙江工业大学</h3>
+                        <p class="edu-college">健行学院 <span class="edu-badge">校前1%</span></p>
+                        <p class="edu-major">数据科学与大数据技术 <span class="edu-rating">软科排名41 · A级</span></p>
+                        <p class="edu-time"><i class="far fa-calendar"></i> 2023.09 — 至今</p>
+                    </div>
+                </div>
+                <div class="edu-stats-grid">
+                    <div class="edu-stat">
+                        <span class="edu-stat-value">4.094</span>
+                        <span class="edu-stat-label">GPA / 5.00</span>
+                    </div>
+                    <div class="edu-stat">
+                        <span class="edu-stat-value">3/41</span>
+                        <span class="edu-stat-label">专业排名</span>
+                    </div>
+                    <div class="edu-stat">
+                        <span class="edu-stat-value">616</span>
+                        <span class="edu-stat-label">CET-4</span>
+                    </div>
+                    <div class="edu-stat">
+                        <span class="edu-stat-value">587</span>
+                        <span class="edu-stat-label">CET-6</span>
+                    </div>
+                </div>
+                <div class="edu-honors">
+                    <span class="honor-tag"><i class="fas fa-award"></i> 二等学习奖学金</span>
+                    <span class="honor-tag"><i class="fas fa-hands-helping"></i> 志愿者工时 350+</span>
+                    <span class="honor-tag"><i class="fas fa-star"></i> 预备党员</span>
+                </div>
+                <div class="edu-courses">
+                    <h4>核心课程</h4>
+                    <div class="course-tags">
+                        <span class="course-tag">高等数学 <em>97</em></span>
+                        <span class="course-tag">数值分析 <em>96</em></span>
+                        <span class="course-tag">机器学习 <em>96</em></span>
+                        <span class="course-tag">数据结构与算法 <em>93</em></span>
+                        <span class="course-tag">Python程序设计 <em>94</em></span>
+                        <span class="course-tag">操作系统原理 <em>94</em></span>
+                        <span class="course-tag">计算机组成原理 <em>93</em></span>
+                        <span class="course-tag">数据挖掘 <em>93</em></span>
+                        <span class="course-tag">数据库原理及应用 <em>92</em></span>
+                        <span class="course-tag">C++程序设计 <em>93</em></span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Research Interests -->
-    <section class="section research-interests">
-        <div class="container">
-            <h2 class="section-title">研究方向</h2>
-            <div class="research-tags">
-                <span class="research-tag">AI Products</span>
-                <span class="research-tag">Full Stack Development</span>
-                <span class="research-tag">Creative Frontend</span>
-                <span class="research-tag">Human-Computer Interaction</span>
-                <span class="research-tag">Machine Learning Applications</span>
-                <span class="research-tag">Web Technologies</span>
+    <!-- Awards Section -->
+    <section id="awards" class="section section-alt">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Awards</span>
+                <h2 class="section-title">获奖与参与</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="awards-timeline">
+                <div class="award-item glass-card reveal" data-delay="0">
+                    <div class="award-icon ongoing">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-status">进行中</div>
+                        <h3>中国大学生服务外包创新创业大赛A类</h3>
+                        <p>基于OpenHarmony的产品能效标签与缺陷检测系统，围绕家电或工业场景中的能效标签识别、缺陷检测与位置检测需求，设计基于OpenHarmony的智能检测系统。</p>
+                        <div class="award-tags">
+                            <span>OpenHarmony</span>
+                            <span>缺陷检测</span>
+                            <span>能效识别</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="award-item glass-card reveal" data-delay="100">
+                    <div class="award-icon pending">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-status pending">待出结果</div>
+                        <h3>2026美国大学生数学建模大赛</h3>
+                        <p>构建了描述开路电压（OCV）与荷电状态（SOC）之间非线性关系的数学模型，开发自动化求解器，实现了对电池生命周期及性能波动的精确模拟。</p>
+                        <div class="award-tags">
+                            <span>数学建模</span>
+                            <span>OCV-SOC</span>
+                            <span>电池模拟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="award-item glass-card reveal" data-delay="200">
+                    <div class="award-icon winner">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>全国大学生数学竞赛浙江省二等奖</h3>
+                    </div>
+                </div>
+                <div class="award-item glass-card reveal" data-delay="300">
+                    <div class="award-icon winner">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>美国大学生数学建模大赛赛区三等奖</h3>
+                    </div>
+                </div>
+                <div class="award-item glass-card reveal" data-delay="400">
+                    <div class="award-icon winner">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>ACM校赛三等奖</h3>
+                    </div>
+                </div>
+                <div class="award-item glass-card reveal" data-delay="500">
+                    <div class="award-icon winner">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>全国大学生电子商务竞赛校赛三等奖</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section projects-section">
-        <div class="container">
-            <h2 class="section-title">项目</h2>
-            
-            <div class="filter-buttons" id="filterButtons">
-                <button class="filter-btn active" data-filter="all">全部</button>
-                <button class="filter-btn" data-filter="ai">AI 应用</button>
-                <button class="filter-btn" data-filter="frontend">前端开发</button>
-                <button class="filter-btn" data-filter="fullstack">全栈项目</button>
-                <button class="filter-btn" data-filter="tool">效率工具</button>
+    <section id="projects" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-microscope"></i> Research</span>
+                <h2 class="section-title">项目科研</h2>
+                <div class="section-line"></div>
             </div>
-            
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be loaded from projects.js -->
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal" data-delay="0">
+                    <div class="project-icon"><i class="fas fa-database"></i></div>
+                    <h3>中文数据集BPRF构建</h3>
+                    <p class="project-paper">Business as Rulesual: A Benchmark and Framework for Business Rule Flow Modeling with LLMs</p>
+                    <p>利用大模型构建符合规则的数据集</p>
+                    <div class="project-tags">
+                        <span>LLM</span><span>NLP</span><span>数据集</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal" data-delay="100">
+                    <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>清华SDG研究院助研</h3>
+                    <p>绿色外卖研究课题组 — 负责数据采集与整理：采用爬虫获取各外卖平台数据并整理</p>
+                    <div class="project-tags">
+                        <span>爬虫</span><span>数据分析</span><span>可持续发展</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal" data-delay="200">
+                    <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>CMeEE-V2医疗实体识别</h3>
+                    <p>参与医学命名实体识别（NER）任务，负责数据集的处理与特征提取，针对临床试验筛选标准进行分类模型构建，优化了在特定医疗语境下的文本理解准确率</p>
+                    <div class="project-tags">
+                        <span>NER</span><span>BERT</span><span>医疗NLP</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal" data-delay="300">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="project-excellent">智能园区自主导航小车系统</h3>
+                    <p>基于树莓派，采用OpenCV+HOG+SVM分类器识别交通标志实现导航</p>
+                    <div class="project-tags">
+                        <span>树莓派</span><span>OpenCV</span><span>HOG+SVM</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal" data-delay="400">
+                    <div class="project-icon"><i class="fas fa-file-archive"></i></div>
+                    <h3 class="project-excellent">哈夫曼树压缩软件</h3>
+                    <p>QT基于哈夫曼树的压缩软件设计</p>
+                    <div class="project-tags">
+                        <span>QT</span><span>哈夫曼编码</span><span>C++</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="section experience-section">
-        <div class="container">
-            <h2 class="section-title">经历</h2>
-            <div class="timeline" id="experienceTimeline">
-                <!-- Experience items will be loaded from experience.js -->
+    <section id="experience" class="section section-alt">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">实习与交流经历</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item glass-card reveal" data-delay="0">
+                    <div class="exp-dot"></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div class="exp-type exchange"><i class="fas fa-globe-asia"></i> 交流</div>
+                            <span class="exp-date">2025.11</span>
+                        </div>
+                        <h3>智慧可持续城市与交通冬令营</h3>
+                        <p class="exp-org">TUM · TUM Asia · 清华大学</p>
+                        <p>参加Smart Sustainable Cities and Transportation联合冬令营项目，围绕智慧城市与可持续交通主题进行课程学习与学术交流</p>
+                    </div>
+                </div>
+                <div class="exp-item glass-card reveal" data-delay="100">
+                    <div class="exp-dot"></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div class="exp-type intern"><i class="fas fa-building"></i> 实习</div>
+                            <span class="exp-date">2025.07 — 2025.08</span>
+                        </div>
+                        <h3>宁波市大数据投资发展有限公司</h3>
+                        <p>了解Dify、Ragflow部署及使用，深入学习"宁波人才"公众号"无忧宝"智能问答平台搭建。搭建基于DIFY+VUE+FLASK+ONLYOFFICE的合同审核系统，通过nginx实现公网访问。</p>
+                        <div class="exp-tags">
+                            <span>Dify</span><span>Ragflow</span><span>Vue</span><span>Flask</span><span>Nginx</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-item glass-card reveal" data-delay="200">
+                    <div class="exp-dot"></div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div class="exp-type intern"><i class="fas fa-building"></i> 实习</div>
+                            <span class="exp-date">2024.08</span>
+                        </div>
+                        <h3>宁波金唐软件有限公司</h3>
+                        <p>基于HTML+JSP+MySQL搭建网页留言板，实现用户注册/登录，访问控制，留言查询，留言显示，上传留言</p>
+                        <div class="exp-tags">
+                            <span>HTML</span><span>JSP</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviewer Service Section -->
-    <section class="section reviewer-section">
-        <div class="container">
-            <h2 class="section-title">审稿服务</h2>
-            <div class="reviewer-list" id="reviewerList">
-                <!-- Reviewer items will be loaded from reviewer.js -->
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Skills</span>
+                <h2 class="section-title">个人技能</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card reveal" data-delay="0">
+                    <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                    <h3>编程语言</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span><span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>C++</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal" data-delay="100">
+                    <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI / 深度学习</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">PyTorch</span>
+                        <span class="skill-chip">MindSpore</span>
+                        <span class="skill-chip">BERT</span>
+                        <span class="skill-chip">RAG</span>
+                        <span class="skill-chip">NLP</span>
+                        <span class="skill-chip">视觉大模型</span>
+                        <span class="skill-chip">词向量</span>
+                        <span class="skill-chip">文本分类</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal" data-delay="200">
+                    <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI辅助开发</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Claude Code</span>
+                        <span class="skill-chip">Codex</span>
+                        <span class="skill-chip">Prompt Engineering</span>
+                        <span class="skill-chip">需求拆解</span>
+                        <span class="skill-chip">代码生成</span>
+                        <span class="skill-chip">调试优化</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal" data-delay="300">
+                    <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+                    <h3>工程与部署</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Linux</span>
+                        <span class="skill-chip">Dify</span>
+                        <span class="skill-chip">Ragflow</span>
+                        <span class="skill-chip">Nginx</span>
+                        <span class="skill-chip">Flask</span>
+                        <span class="skill-chip">Vue</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card reveal" data-delay="400">
+                    <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+                    <h3>大数据生态</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Hadoop</span>
+                        <span class="skill-chip">HDFS</span>
+                        <span class="skill-chip">HBase</span>
+                        <span class="skill-chip">Mycat</span>
+                        <span class="skill-chip">ShardingSphere</span>
+                        <span class="skill-chip">MySQL</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 杨屹轩 (Tony Yang). All rights reserved.</p>
-            <p class="footer-note">Built with simplicity and clarity in mind.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-bracket">&lt;</span>YX<span class="logo-bracket">/&gt;</span>
+                <p>杨屹轩 · Data Science & Big Data</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:tonyyangsuper@gmail.com"><i class="fas fa-envelope"></i> tonyyangsuper@gmail.com</a>
+                <a href="tel:+8618006655320"><i class="fas fa-phone"></i> (+86) 180-0665-5320</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yixuan Yang. Built with passion & code.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="data.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
